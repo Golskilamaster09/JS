@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação para efetuar cálculos</title>
+    <script>
+  
+            //Captação dos valores
+        var valor1 = prompt('Informe o primeiro valor')
+
+            var opr = prompt('Escolha entre Soma, Subtração, Multiplicação ou Divisão')
+
+        var valor2 = prompt('Informe o segundo valor')
+
+             //Definindo Valores Inteiros
+            var valor1 = parseFloat(valor1)
+            var valor2 = parseFloat(valor2)
+
+            //Lógica usada
+        switch (opr){
+            case 'Soma':
+                resultado = valor1 + valor2
+            break
+
+            case 'soma':
+                resultado = valor1 + valor2
+            break
+
+            case'Subtração':
+                resultado = valor1 - valor2
+            break
+
+            case'subtração':
+                resultado = valor1 - valor2
+            break
+
+            case'Divisão':
+                resultado  = valor1 / valor2
+            break
+
+            case'Multiplicação':
+                resultado = valor1 * valor2
+            break
+
+
+            default:
+                document.write('Default')
+        }
+
+            //SAIDA
+        document.write('O Resultado é : ' + resultado)
+
+        
+
+
+
+  /*
+        //GABARITO 
+
+        var num1 = prompt('Digite um número');
+        var operacao = prompt('Digite a operação');
+        var num2 = prompt('Digite outro número');
+
+        function calc(num1, num2, operacao){
+
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+
+        var resultado = 0;
+
+        if(operacao == 'soma'){
+        resultado = num1 + num2;
+        }
+
+        if(operacao == 'subtracao'){
+        resultado = num1 - num2;
+        }
+
+        if(operacao == 'divisao'){
+            resultado = num1 / num2;
+        }
+
+        if(operacao == 'multiplicacao'){
+            resultado = num1 * num2;
+        }
+
+        return resultado;
+        }
+
+        document.write('O resultado é: ' + calc(num1, num2, operacao)); 
+                
+     */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
